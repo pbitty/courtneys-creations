@@ -1,3 +1,5 @@
 # Courtney's Creations website
 
-Go to the gh-pages branch
+This is a temporary location for my fiancée's site.
+
+Go to the gh-pages branch.
