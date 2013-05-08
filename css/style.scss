@@ -1,0 +1,58 @@
+@import 'bootstrap/bootstrap';
+@import 'bootstrap/responsive';
+
+$bg_outer: #a4e778;
+$bg_inner: white;
+$blurb_margin_bottom: $fluidGridGutterWidth;
+$blurb_unit_height: 120px;
+$banner_margin: $blurb_margin_bottom * 2;
+
+@mixin filled_box {
+	border: 1px solid #222;
+	background-color: $bg_inner;
+}
+
+body {
+	// font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family: CoysFontMedium, Helvetica Neue, Helvetica, Arial, sans-serif;
+	
+	font-size: 24px;
+	color: #111;
+	background-color: $bg_outer;
+}
+
+.container {
+	max-width: 1024px;
+}
+
+.under-construction {
+	float: right;
+	margin-top: 12px;
+}
+
+.banner-top {
+	@include filled_box;
+	margin: $banner_margin 0;
+}
+
+.slogan {
+	@include filled_box;
+	text-align: center;
+}
+
+.blurb-row {
+	margin-bottom: $blurb_margin_bottom;
+
+	.blurb {
+		@include filled_box;
+		padding: 20px;
+		text-align: center;
+	}
+	
+	.blurb-tall {
+		min-height: $blurb_unit_height * 3;
+	}
+	.blurb-short {
+		min-height: $blurb_unit_height;
+	}
+}
