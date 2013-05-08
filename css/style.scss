@@ -14,7 +14,7 @@ $banner_margin: $blurb_margin_bottom * 2;
 
 body {
 	// font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-	font-family: CoysFontMedium, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 	
 	font-size: 24px;
 	color: #111;
@@ -26,29 +26,48 @@ body {
 }
 
 .under-construction {
+	display: none;
 	float: right;
 	margin-top: 12px;
 }
 
 .banner-top {
-	@include filled_box;
+	// @include filled_box;
 	margin: $banner_margin 0;
 }
 
+.banner-text {
+	margin: 100px 0;
+	text-align: center;
+	font-family: CoysFontMedium;
+	font-size: 8em;
+	line-height: 20px;
+}
+
 .slogan {
-	@include filled_box;
+	// @include filled_box;
+	font-family: CoysFontMedium;			
 	text-align: center;
 }
 
 .blurb-row {
+	@extend .row-fluid;
 	margin-bottom: $blurb_margin_bottom;
 
 	.blurb {
 		@include filled_box;
 		padding: 20px;
-		text-align: center;
+
+		&.blurb-image {
+			text-align: left;
+		}
+
+		h1 {
+			text-align: center;
+			font-family: CoysFontMedium;			
+		}
 	}
-	
+
 	.blurb-tall {
 		min-height: $blurb_unit_height * 3;
 	}
