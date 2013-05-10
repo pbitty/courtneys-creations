@@ -1,5 +1,6 @@
 @import 'bootstrap/bootstrap';
 @import 'bootstrap/responsive';
+@import url(http://fonts.googleapis.com/css?family=Happy+Monkey);
 
 $bg_outer: #a4e778;
 $bg_inner: white;
@@ -14,11 +15,13 @@ $banner_margin: $blurb_margin_bottom * 2;
 
 body {
 	// font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-	font-family: CoysFontMedium, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 	
 	font-size: 24px;
 	color: #111;
 	background-color: $bg_outer;
+
+	line-height: 150%;
 }
 
 .container {
@@ -26,7 +29,7 @@ body {
 }
 
 .under-construction {
-	float: right;
+	text-align: right;
 	margin-top: 12px;
 }
 
@@ -45,8 +48,14 @@ body {
 
 	.blurb {
 		@include filled_box;
+		font-family: 'Happy Monkey', cursive;
+
 		padding: 20px;
 		text-align: center;
+
+		h1 {
+			font-family: CoysFontMedium;
+		}
 	}
 	
 	.blurb-tall {
