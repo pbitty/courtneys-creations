@@ -2,4 +2,4 @@ exclude: ["Gemfile*", "README.md"]
 
 sass:
     syntax: scss        # scss|sass
-    style:  compressed  # nested|expanded|compact|compressed
+    style:  expanded    # nested|expanded|compact|compressed

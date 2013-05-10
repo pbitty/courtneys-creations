@@ -4,6 +4,7 @@ layout: default
 %html
   %head
     %title Courtney's Creations
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
     %link{:href => "font/coysfont.css", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "css/style.css", :rel => "stylesheet", :type => "text/css"}
   
@@ -13,57 +14,71 @@ layout: default
         This site is still under construction. Check back soon for updates.
       
       .banner-top
-        %img{src: "img/banner_top.png", alt: "Courtney's Creations"}
+        %img{src: "img/courtneys_creations.png", alt: "Courtney's Creations"}
 
       .blurb-row
         .slogan
-          %h1 
-            I make cute, customized designs for weddings and your special occasions.
-
-      .blurb-row
-        .span8.blurb.blurb-tall.blurb-image
-          %img{src: "img/weddings.png"}
-        .span4.blurb.blurb-tall
-          %br
-          %h1 Wedding stationery
-          %p save-the-date cards
-          %p invitations
-          %p programs
-          %p menus
-          %p thank-you cards
+          I make cute, customized designs for weddings and your special occasions.
       
       .blurb-row
-        .blurb.blurb-short
-          %h1 Special Occasions
-          %p 
-            birthdays, baby showers, mother's day, father's day, valentine's day, holidays, anniversaries, graduations, thank-yous, get-well wishes, etc
-
-      .blurb-row
-        .span4.blurb.blurb-tall 
-          %h1 Family portraits
-          %p
-            Have a family portrait done to put inside your next holiday card! If you would like to incorporate a furry, scaly, or feathered pal, don't foret to send in a picture of them too!
-        .span8.blurb.blurb-tall 
-          %img{src: "img/family_portrait.png"}
+        .courtney
+          %img{src: "img/courtney.png", alt: "Courtney"}
       
-      .blurb-row
-        .blurb.blurb-short
-          %h1 How it's done
-          %p
-            Send in a current photo that really captures you or the recipient. If you have any specific features (birthmark, unique hairstyle, etc) make sure that the photo highlights it. Feel free to send me more than one. 
+      .section
+        .blurb-row
+          .blurb
+            %h1.blurb-heading What I make
 
-      .blurb-row
-        .blurb.blurb-short
-          %h1 Contact me:
-          %p
-            For more information, to receive a quote, or to place an order - please contact me at: 
-            %a{href: "mailto:courtneyscustomizablecreations@gmail.com"}
-              courtneyscustomizablecreations@gmail.com
+        .blurb-row
+          .span6.blurb.blurb-tall.blurb-image
+            %img{src: "img/weddings.png"}
+          .span6.blurb.blurb-tall.blurb-right
+            %h2.blurb-heading Wedding stationery
+            .blurb-text
+              %p Save-the-date cards
+              %p Invitations
+              %p Programs
+              %p Menus
+              %p Thank-you cards
+        
+        .blurb-row
+          .blurb.blurb-short.blurb-center
+            %h2.blurb-heading Cards for Special Occasions
+            .blurb-text
+              %p 
+                Birthdays, baby showers, mother's day, father's day, valentine's day, holidays, anniversaries, graduations, thank-yous, get-well wishes, etc.
 
-      .blurb-row
-        .blurb.blurb-short
-          %p
-            Please note that due to the personalized nature of my work, I am only able to take a limited number of requests at a time. Be sure to order early especially for holidays.
+        .blurb-row
+          .span6.blurb.blurb-tall.blurb-left
+            %h2.blurb-heading Family portraits
+            .blurb-text
+              %p
+                Have a family portrait done to put inside your next holiday card! If you would like to incorporate a furry, scaly, or feathered pal, don't foret to send in a picture of them too!
+          .span6.blurb.blurb-tall 
+            %img{src: "img/family_portrait.png"}
+        
+      .section
+        .blurb-row
+          .blurb.blurb-short
+            %h1.blurb-heading How it's done
+            .blurb-text
+              %p
+                Send in a current photo that really captures you or the recipient. If you have any specific features (birthmark, unique hairstyle, etc) make sure that the photo highlights it. Feel free to send me more than one. 
+
+      .section
+        .blurb-row
+          .blurb.blurb-short
+            %h1.blurb-heading Contact me:
+            .blurb-text
+              %p
+                For more information, to receive a quote, or to place an order - please contact me at: 
+                %a{href: "mailto:courtneyscustomizablecreations@gmail.com"}
+                  courtneyscustomizablecreations@gmail.com
+
+        .blurb-row
+          .blurb.blurb-short
+            %p
+              Please note that due to the personalized nature of my work, I am only able to take a limited number of requests at a time. Be sure to order early especially for holidays.
 
       .banner-bottom
         %img{src: "img/banner_bottom.png"}
