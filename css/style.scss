@@ -14,9 +14,7 @@ $banner_margin: $blurb_margin_bottom * 2;
 }
 
 body {
-	// font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-	
+	font-family: 'Happy Monkey', Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-size: 24px;
 	color: #111;
 	background-color: $bg_outer;
@@ -48,7 +46,6 @@ body {
 
 	.blurb {
 		@include filled_box;
-		font-family: 'Happy Monkey', cursive;
 
 		padding: 20px;
 		text-align: center;
