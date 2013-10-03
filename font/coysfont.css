@@ -1,8 +1,0 @@
-@font-face {
-    font-family: 'CoysFontMedium';
-    src: url('coysfont.eot');
-    src: url('coysfont.eot') format('embedded-opentype'),
-         url('coysfont.woff') format('woff'),
-         url('coysfont.ttf') format('truetype'),
-         url('coysfont.svg#CoysFontMedium') format('svg');
-}
